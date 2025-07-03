@@ -1,22 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Contact | Abba's Most Loved</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content='width=device-width, initial-scale=1.0' />
+  <title>Contact Us | Abba's Most Loved</title>
   <style>
-    body { font-family: Arial, sans-serif; padding: 40px; background-color: white; color: #222; }
-    a { text-decoration: none; color: #007bff; }
-    form input, form textarea { width: 100%; padding: 10px; margin: 10px 0; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #ffffff;
+      color: #222222;
+      padding: 40px 20px;
+    }
+    nav {
+      background-color: #f0f0f0;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #25D366;
+      font-weight: bold;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+    }
+    .button {
+      padding: 10px 16px;
+      background-color: #25D366;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    form {
+      max-width: 600px;
+      margin: auto;
+    }
   </style>
 </head>
 <body>
   <nav>
-    <a href="index.html">Home</a> |
-    <a href="about.html">About</a> |
-    <a href="teachings.html">Teachings</a> |
-    <a href="prayer.html">Prayer Request</a> |
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="teachings.html">Teachings</a>
+    <a href="prayer.html">Prayer</a>
     <a href="contact.html">Contact</a>
+    <a href="testimonies.html">Testimonies</a>
   </nav>
-  <h1>Contact Us</h1><form action='mailto:abbasmostloved@gmail.com' method='post' enctype='text/plain'><p><input type='text' name='name' placeholder='Your Name'><br><input type='email' name='email' placeholder='Your Email'><br><textarea name='message' placeholder='Write your message...' rows='6' cols='40'></textarea><br><input type='submit' value='Send Message'></p></form>
+  
+<h1>Reach Out to Us</h1>
+<form action="mailto:abbasmostloved@gmail.com" method="post" enctype="text/plain">
+  <input type="text" name="name" placeholder="Your Name">
+  <input type="email" name="email" placeholder="Your Email">
+  <textarea name="message" placeholder="Your Message" rows="6"></textarea>
+  <input type="submit" value="Send Message">
+</form>
+
+  <div class="footer">
+    <a href="https://whatsapp.com/channel/0029Vb6lcOfHAdNYr9aBaQ33" target="_blank" class="button">Join Our WhatsApp Channel</a>
+  </div>
 </body>
 </html>
