@@ -8,25 +8,44 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #ffffff;
-      color: #222222;
+      background: url('worship-bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
       padding: 40px 20px;
     }
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.65);
+      padding: 2rem;
+      border-radius: 10px;
+      max-width: 700px;
+      margin: auto;
+    }
+
     nav {
-      background-color: #f0f0f0;
+      background-color: #1f2937;
       padding: 10px;
       text-align: center;
     }
+
     nav a {
       margin: 0 10px;
       text-decoration: none;
       color: #25D366;
       font-weight: bold;
     }
+
     .footer {
       text-align: center;
-      margin-top: 40px;
+      margin-top: 60px;
+      color: #ccc;
     }
+
+    h1 {
+      text-align: center;
+      color: #ffffff;
+    }
+
     .button {
       padding: 10px 16px;
       background-color: #25D366;
@@ -35,6 +54,7 @@
       border-radius: 5px;
       text-decoration: none;
     }
+
     input, textarea {
       width: 100%;
       padding: 10px;
@@ -42,9 +62,10 @@
       border-radius: 5px;
       border: 1px solid #ccc;
     }
+
     form {
-      max-width: 600px;
-      margin: auto;
+      max-width: 100%;
+      margin-top: 20px;
     }
   </style>
 </head>
@@ -57,16 +78,18 @@
     <a href="contact.html">Contact</a>
     <a href="testimonies.html">Testimonies</a>
   </nav>
-  
-<h1>Submit Your Prayer Request</h1>
-<form action="mailto:abbasmostloved@gmail.com" method="post" enctype="text/plain">
-  <input type="text" name="name" placeholder="Your Name" required>
-  <textarea name="request" placeholder="Type your prayer request here..." rows="6" required></textarea>
-  <input type="submit" value="Send Request">
-</form>
+
+  <div class="overlay">
+    <h1>Submit Your Prayer Request</h1>
+    <form action="mailto:abbasmostloved@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <textarea name="request" placeholder="Type your prayer request here..." rows="6" required></textarea>
+      <input type="submit" value="Send Request" class="button" style="margin-top: 10px;">
+    </form>
+  </div>
 
   <div class="footer">
-    <a href="https://whatsapp.com/channel/0029Vb6lcOfHAdNYr9aBaQ33" target="_blank" class="button">Join Our WhatsApp Channel</a>
+  <p>&copy; 2025 Abba's Most Loved</p>
   </div>
 </body>
 </html>
