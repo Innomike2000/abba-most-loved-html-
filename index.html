@@ -14,11 +14,10 @@
 }
 
 nav {
-  background-color: #1f2937; /* darker blue */
-    }
-      padding: 10px;
-      text-align: center;
-    }
+  background-color: #1f2937;
+  padding: 10px;
+  text-align: center;
+}
     nav a {
       margin: 0 10px;
       text-decoration: none;
@@ -87,8 +86,26 @@ nav {
     </p>
   </div>
 </div>
-  <div class="footer">
-    <a href="https://whatsapp.com/channel/0029Vb6lcOfHAdNYr9aBaQ33" target="_blank" class="button">Join Our WhatsApp Channel</a>
-  </div>
+
+  <!-- WhatsApp button -->
+<div class="footer">
+  <a href="https://whatsapp.com/channel/0029Vb6lcOfHAdNYr9aBaQ33" target="_blank" class="button">Join Our WhatsApp Channel</a>
+</div>
+
+<!-- Bible verse footer -->
+<div class="footer" style="margin-top: 60px; text-align: center; color: #9CA3AF;">
+  <hr style="margin-bottom: 1rem; border-color: #374151;" />
+  <p><strong>Isaiah 58:1</strong><br>
+  “Cry aloud, spare not, lift up thy voice like a trumpet, and shew my people their transgression...”</p>
+</div>
+
+<!-- Pop-up alert -->
+<script>
+  if (!sessionStorage.getItem('visited')) {
+    alert("🔥 Welcome to Abba’s Most Loved\\n\\nThis is more than a website.\\nIt is an altar — a spiritual battleground where truth is declared, the broken are restored, and the distracted are awakened.\\n\\nYou are not here by mistake. The Spirit led you.\\n\\n💡 Explore, reflect, and awaken.");
+    sessionStorage.setItem('visited', 'true');
+  }
+</script>
+
 </body>
 </html>
