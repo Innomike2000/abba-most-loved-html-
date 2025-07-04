@@ -8,13 +8,22 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #ffffff;
-      color: #222222;
+      background: url('worship-bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
       padding: 40px 20px;
     }
 
+    .overlay {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 2rem;
+      border-radius: 10px;
+      max-width: 700px;
+      margin: auto;
+    }
+
     nav {
-      background-color: #f0f0f0;
+      background-color: #1f2937;
       padding: 10px;
       text-align: center;
     }
@@ -31,8 +40,7 @@
     }
 
     form {
-      max-width: 600px;
-      margin: auto;
+      margin-top: 20px;
     }
 
     input, textarea {
@@ -40,7 +48,8 @@
       padding: 10px;
       margin-top: 10px;
       border-radius: 5px;
-      border: 1px solid #ccc;
+      border: none;
+      font-size: 1rem;
     }
 
     input[type="submit"] {
@@ -51,12 +60,13 @@
       cursor: pointer;
       margin-top: 10px;
       border-radius: 5px;
+      font-weight: bold;
     }
 
     .footer {
       text-align: center;
       margin-top: 40px;
-      color: #888888;
+      color: #ccc;
       font-size: 0.9rem;
     }
   </style>
@@ -71,13 +81,15 @@
     <a href="testimonies.html">Testimonies</a>
   </nav>
 
-  <h1>Reach Out to Us</h1>
-  <form action="mailto:abbasmostloved@gmail.com" method="post" enctype="text/plain">
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="Your Email" required>
-    <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
-    <input type="submit" value="Send Message">
-  </form>
+  <div class="overlay">
+    <h1>Reach Out to Us</h1>
+    <form action="mailto:abbasmostloved@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+      <input type="submit" value="Send Message">
+    </form>
+  </div>
 
   <div class="footer">
     <p>&copy; 2025 Abba's Most Loved</p>
