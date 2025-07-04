@@ -8,43 +8,69 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #ffffff;
-      color: #222222;
+      background: url('worship-bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
       padding: 40px 20px;
     }
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 2rem;
+      border-radius: 10px;
+      max-width: 900px;
+      margin: auto;
+    }
+
     nav {
-      background-color: #f0f0f0;
+      background-color: #1f2937;
       padding: 10px;
       text-align: center;
     }
+
     nav a {
       margin: 0 10px;
       text-decoration: none;
       color: #25D366;
       font-weight: bold;
     }
+
     .footer {
       text-align: center;
       margin-top: 40px;
+      color: #ccc;
     }
-    .button {
-      padding: 10px 16px;
-      background-color: #25D366;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      text-decoration: none;
+
+    h1 {
+      text-align: center;
+      color: #ffffff;
     }
+
     input, textarea {
       width: 100%;
       padding: 10px;
       margin-top: 10px;
       border-radius: 5px;
       border: 1px solid #ccc;
+      color: #222;
     }
+
     form {
       max-width: 600px;
-      margin: auto;
+      margin: 2rem auto;
+    }
+
+    input[type="submit"] {
+      background-color: #25D366;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    p.note {
+      font-size: 0.9em;
+      color: #d1d5db;
+      text-align: center;
     }
   </style>
 </head>
@@ -57,18 +83,25 @@
     <a href="contact.html">Contact</a>
     <a href="testimonies.html">Testimonies</a>
   </nav>
-  
-<h1>Share a Testimony or Thought</h1>
-<p>Use the form below to share what God is doing through this ministry. All messages will be reviewed before appearing publicly.</p>
-<form>
-  <input type="text" name="name" placeholder="Your Name">
-  <textarea name="message" placeholder="Your Testimony or Thought" rows="6"></textarea>
-  <input type="submit" value="Post (demo only)">
-</form>
-<p style="font-size:0.9em; color:gray;">Note: This is a sample display. Full interaction will require backend integration later.</p>
+
+  <div class="overlay">
+    <h1>Share a Testimony or Thought</h1>
+    <p style="line-height: 1.8; text-align: center;">
+      Use the form below to share what God is doing through this altar.  
+      Whether it's a breakthrough, a stirring, or a moment of truth — your story could awaken someone else.
+    </p>
+    
+    <form>
+      <input type="text" name="name" placeholder="Your Name">
+      <textarea name="message" placeholder="Your Testimony or Thought" rows="6"></textarea>
+      <input type="submit" value="Post (demo only)">
+    </form>
+
+    <p class="note">Note: This is a sample display. Full interaction will require backend integration later.</p>
+  </div>
 
   <div class="footer">
-    <a href="https://whatsapp.com/channel/0029Vb6lcOfHAdNYr9aBaQ33" target="_blank" class="button">Join Our WhatsApp Channel</a>
+    <p>&copy; 2025 Abba's Most Loved</p>
   </div>
 </body>
 </html>
