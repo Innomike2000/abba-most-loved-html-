@@ -87,11 +87,30 @@ nav {
   </div>
 </div>
 
+  <section style="text-align: center; margin: 60px 0;">
+  <img src="convener.jpg" alt="Convener photo" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; box-shadow: 0 0 10px rgba(0,0,0,0.3); margin-bottom: 1rem;">
+  <h2 style="color: #25D366;">Meet the Convener</h2>
+  <p style="max-width: 700px; margin: auto; color: #E5E7EB; font-size: 1.1rem;">
+    My name is Innocent Nwankwo, a vessel stirred and sent by the Spirit — not for crowds, but for souls.  
+    This platform was born from a hunger to awaken slumbering hearts through raw truth, prayer, and bold love.
+    I'm simply Abba's Most Loved — and I want you to encounter Him too.
+  </p>
+  </section>
+
+  <section style="margin: 60px auto; max-width: 700px;">
+  <h2 style="text-align: center; color: #25D366;">Leave a Prayer Request or Message</h2>
+  <form action="mailto:abbasmostloved@gmail.com" method="POST" enctype="text/plain">
+    <input type="text" name="Name" placeholder="Your name" required />
+    <textarea name="Message" rows="5" placeholder="Your message or prayer request" required></textarea>
+    <button type="submit" class="button" style="margin-top: 10px;">Send</button>
+  </form>
+  </section>
+
   <!-- WhatsApp button -->
 <div class="footer">
   <a href="https://whatsapp.com/channel/0029Vb6lcOfHAdNYr9aBaQ33" target="_blank" class="button">Join Our WhatsApp Channel</a>
 </div>
-
+  
 <!-- Bible verse footer -->
 <div class="footer" style="margin-top: 60px; text-align: center; color: #9CA3AF;">
   <hr style="margin-bottom: 1rem; border-color: #374151;" />
@@ -99,6 +118,14 @@ nav {
   “Cry aloud, spare not, lift up thy voice like a trumpet, and shew my people their transgression...”</p>
 </div>
 
+  <audio id="worshipPlayer" autoplay muted loop style="display: block; margin: auto; margin-top: 20px;">
+  <source src="worship.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+<p style="text-align: center; color: #9CA3AF; font-size: 0.9rem;">
+  Soft worship playing <em>(muted by default)</em> — tap to unmute.
+</p>
+  
 <!-- Pop-up alert -->
 <script>
   if (!sessionStorage.getItem('visited')) {
